@@ -4,11 +4,11 @@ let display=document.getElementById("display");
 let ans = "";
 function handleInput(value) {
 
-    if (value === "C") {
+    if (value === "AC") {
         display.value = "";
           ans = ""; 
     }
-    else if(value === "back"){
+    else if(value === "⌫"){
         display.value= display.value.slice(0, -1);
     }
 
@@ -47,12 +47,12 @@ document.addEventListener("keydown", (event) => {
     let key = event.key;
 
     if (key === "Enter") key = "=";
-    if (key === "Escape") key = "C";
-    if (key === "Backspace") {
+    if (key === "Escape") key = "AC";
+    if (key === "Backspace") key ="⌫"; {
         display.value = display.value.slice(0, -1);
         return;
     }
-     let allowedKeys = "0123456789+-*/.=C";
+     let allowedKeys = "0123456789+-*/.=AC";
 
     if (allowedKeys.includes(key)) {
         handleInput(key);
