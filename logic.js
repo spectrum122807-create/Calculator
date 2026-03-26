@@ -44,7 +44,7 @@ function handleInput(value) {
     else if (value === "=") {
         try {
             ans = eval(text);
-            ans= Math.round(ans * Math.pow(10,2)) /Math.pow(10,2) ;
+            ans= Math.round(ans * 10**20) / 10**20 ;
             text = ans.toString();
             cursorPos = text.length;
         } catch {
