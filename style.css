@@ -60,27 +60,45 @@ body {
     background: #666;
 }
 
-/* Special buttons */
-.button button:nth-child(15) {  /* C button */
-    background: #e74c3c;
-}
 
-.button button:nth-child(16) {  /* = button */
+/* Special buttons */
+
+
+.button button:nth-child(1) {  /* C button */
+    background:#ea3824;
+}
+.button button:nth-child(8) {  /* = button */
     background: #2ecc71;
+    
+}
+.button button:nth-child(4) {  /* back button */
+    background: #3184c4;
+    
 }
 /* Operator buttons (+, -, /, *) */
-.button button:nth-child(11),
-.button button:nth-child(12),
-.button button:nth-child(13),
-.button button:nth-child(14) {
+.button button:nth-child(6),
+.button button:nth-child(2),
+.button button:nth-child(3),
+.button button:nth-child(7),
+.button button:nth-child(5) {
     background: orange;
     color: white;
 }
 
 /* Optional: hover effect for operators */
-.button button:nth-child(11):hover,
-.button button:nth-child(12):hover,
-.button button:nth-child(13):hover,
-.button button:nth-child(14):hover {
+.button button:nth-child(2):hover,
+.button button:nth-child(3):hover,
+.button button:nth-child(5):hover,
+.button button:nth-child(6):hover,
+.button button:nth-child(7):hover{
     background: darkorange;
+}
+.button button:nth-child(1):hover{
+      background-color: #545353;
+}
+.button button:nth-child(4):hover{
+      background-color: #ff0000;
+}
+.button button:nth-child(8):hover{
+      background-color:#0f0;
 }
