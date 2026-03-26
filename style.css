@@ -29,6 +29,7 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
     overflow-x:auto ;
+  
 }
 
 /* blinking cursor */
@@ -49,7 +50,7 @@ body {
 
 /* Button container */
 .button {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
     gap: 10px;
 }
@@ -89,7 +90,7 @@ button.ans:hover {
 .button button:nth-child(1) {  /* C button */
     background:#ea3824;
 }
-.button button:nth-child(10) {  /* = button */
+.button button:nth-child(22) {  /* = button */
     background: #2ecc71;
     
 }
@@ -98,11 +99,10 @@ button.ans:hover {
     
 }
 /* Operator buttons (+, -, /, *) */
-.button button:nth-child(6),
-.button button:nth-child(9),
 .button button:nth-child(8),
-.button button:nth-child(7),
-.button button:nth-child(5) {
+.button button:nth-child(12),
+.button button:nth-child(16),
+.button button:nth-child(20) {
     background: orange;
     color: white;
 }
@@ -112,11 +112,10 @@ button.ans:hover {
     color: white;
 }
 /* Optional: hover effect for operators */
-.button button:nth-child(9):hover,
-.button button:nth-child(4):hover,
-.button button:nth-child(5):hover,
-.button button:nth-child(6):hover,
-.button button:nth-child(7):hover{
+.button button:nth-child(8):hover,
+.button button:nth-child(12):hover,
+.button button:nth-child(16):hover,
+.button button:nth-child(20):hover{
     background: darkorange;
 }
 .button button:nth-child(1):hover{
@@ -125,12 +124,13 @@ button.ans:hover {
 .button button:nth-child(4):hover{
       background-color: #ff0000;
 }
-.button button:nth-child(10):hover{
+.button button:nth-child(22):hover{
       background-color:#0f0;
 }
 .button button:nth-child(2):hover,
 .button button:nth-child(3):hover{
     background: purple;
 }
-
-
+.op {
+    grid-column: 4;
+}
