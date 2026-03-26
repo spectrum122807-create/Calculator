@@ -44,7 +44,7 @@ function handleInput(value) {
     else if (value === "=") {
         try {
             ans = eval(text);
-            ans= Math.round(ans * 100) / 100;
+            ans= Math.round(ans * 10000000000) / 10000000000;
             text = ans.toString();
             cursorPos = text.length;
         } catch {
