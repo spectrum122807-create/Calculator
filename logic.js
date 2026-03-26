@@ -44,6 +44,7 @@ function handleInput(value) {
     else if (value === "=") {
         try {
             ans = eval(text);
+            ans= parseFloat(ans.toFixed(2));
             text = ans.toString();
             cursorPos = text.length;
         } catch {
