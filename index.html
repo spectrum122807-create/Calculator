@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colour.css">
 </head>
 
 <body>
     <div id="calsi">
-        <input  id="display" readonly>
-      
+       
+            <div id="display" tabindex="0"></div>
             <div class="button">
-                  <button>AC</button>
+                <button>AC</button>
+                <button data-value="left">◀</button>
+                <button data-value="right">▶</button>
+                <button>⌫</button>
                 <button>.</button>
                 <button>+</button>
-                <button>⌫</button>
+                
                 <button>-</button>
                 <button>/</button>
                 <button>*</button>
@@ -34,7 +37,9 @@
                 <button>9</button>
                 <button>0</button>
                 <button>.</button>
-                <button>Ans</button>
+                <button class="ans">Ans</button>
+           
+                
             </div>
        
 
