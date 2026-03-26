@@ -1,6 +1,5 @@
 let btn=document.querySelectorAll("button");
 let display=document.getElementById("display");
-
 let ans = "";
 function handleInput(value) {
 
@@ -20,10 +19,7 @@ function handleInput(value) {
             display.value = "Error";
         }
     }
-
-    else if (value === "Ans") {
-        display.value += ans; // use stored value
-    }
+    
 
     else {
         // Prevent duplicate operators
@@ -48,11 +44,11 @@ document.addEventListener("keydown", (event) => {
 
     if (key === "Enter") key = "=";
     if (key === "Escape") key = "AC";
-    if (key === "Backspace") key ="⌫"; {
-        display.value = display.value.slice(0, -1);
+    if (key === "Backspace") {
+       handleInput("⌫")
         return;
     }
-     let allowedKeys = "0123456789+-*/.=AC";
+     let allowedKeys = "0123456789+-*/.=C";
 
     if (allowedKeys.includes(key)) {
         handleInput(key);
