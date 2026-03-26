@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;   /* horizontal center */
     align-items: center;       /* vertical center */
-    background-color: #6f76b4;
+    background-color: #1f1f20;
 }
 
 /* Calculator container */
