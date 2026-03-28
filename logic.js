@@ -34,7 +34,9 @@ function handleInput(value) {
             cursorPos--;
         }
     }
-
+     else if (value === "%") {
+    insertAtCursor("/100");
+    }
     else if (value === "Ans") {
         if (ans !== "") {
             insertAtCursor(ans.toString());
@@ -63,7 +65,7 @@ function handleInput(value) {
 
     else {
         let lastChar = text.slice(-1);
-        let operators = ["+", "-", "*", "/"];
+        let operators = ["+", "-", "*", "/","%"];
 
         if (operators.includes(value) && operators.includes(lastChar)) {
             return;
