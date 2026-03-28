@@ -90,7 +90,7 @@ button.ans:hover {
 .button button:nth-child(1) {  /* C button */
     background:#ea3824;
 }
-.button button:nth-child(22) {  /* = button */
+.button button:nth-child(24) {  /* = button */
     background: #2ecc71;
     
 }
@@ -102,7 +102,8 @@ button.ans:hover {
 .button button:nth-child(8),
 .button button:nth-child(12),
 .button button:nth-child(16),
-.button button:nth-child(20) {
+.button button:nth-child(20),
+.button button:nth-child(23){
     background: orange;
     color: white;
 }
@@ -115,7 +116,8 @@ button.ans:hover {
 .button button:nth-child(8):hover,
 .button button:nth-child(12):hover,
 .button button:nth-child(16):hover,
-.button button:nth-child(20):hover{
+.button button:nth-child(20):hover,
+.button button:nth-child(23):hover{
     background: darkorange;
 }
 .button button:nth-child(1):hover{
@@ -124,7 +126,7 @@ button.ans:hover {
 .button button:nth-child(4):hover{
       background-color: #ff0000;
 }
-.button button:nth-child(22):hover{
+.button button:nth-child(24):hover{
       background-color:#0f0;
 }
 .button button:nth-child(2):hover,
